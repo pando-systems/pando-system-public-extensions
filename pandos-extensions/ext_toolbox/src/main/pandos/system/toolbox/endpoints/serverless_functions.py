@@ -33,5 +33,5 @@ class BackendEndpoints(enum.Enum):
     def flask_endpoint(self, include_base: bool = False) -> str:
         components: List[str] = cast(List[str], self.value)
         if not include_base:
-            components = components[len(ENDPOINT_BASE_SERVERLESS_FUNCTION):]
+            components = components[len(ENDPOINT_BASE):]
         return posixpath.join(*components).replace("{", "<").replace("}", ">")
