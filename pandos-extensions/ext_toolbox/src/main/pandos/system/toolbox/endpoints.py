@@ -14,12 +14,12 @@ ENDPOINT_BASE_SERVERLESS_FUNCTION: List[str] = ["serverless", "function"]
 class BackendEndpoints(enum.Enum):
     SERVERLESS_FUNCTIONS_REGISTER = ENDPOINT_BASE_SERVERLESS_FUNCTION + [
         "register",
-        "{username}",
+        "{user_name}",
         "{function_name}",
     ]
     SERVERLESS_FUNCTION_EVALUATION = ENDPOINT_BASE_SERVERLESS_FUNCTION + [
         "evaluate",
-        "{username}",
+        "{user_name}",
         "{function_name}",
         "{payload_uuid}",
     ]
