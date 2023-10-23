@@ -1,0 +1,1 @@
+pycodestyle pandos-extensions/${1} --max-line-length 120
