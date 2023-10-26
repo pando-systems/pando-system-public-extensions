@@ -12,7 +12,7 @@ ENDPOINT_BASE: List[str] = ["serverless", "function"]
 
 
 class BackendEndpoints(enum.Enum):
-    SERVERLESS_FUNCTIONS_REGISTER = ENDPOINT_BASE + [
+    SERVERLESS_FUNCTION_REGISTRATION = ENDPOINT_BASE + [
         "register",
         "{user_name}",
         "{function_name}",
