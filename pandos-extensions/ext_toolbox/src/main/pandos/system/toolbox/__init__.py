@@ -1,5 +1,7 @@
 try:
     import pandos
 except ImportError:
-    print("Pandos is required!")
-    raise
+    raise ImportError(
+        "Pandos is required to run this extension! "
+        "Please be sure pandos is available in the runtime."
+    )
